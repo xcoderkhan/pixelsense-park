@@ -3,6 +3,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import{logo}from '../../../assets/images/logo/logo.png'
 
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -56,15 +57,15 @@ const Header = () => {
         </ul>
     );
     return (
-        <div className=' bg-yellow-500'>
-            <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 bg-yellow-400">
+        <div className='bg-yellow-500'>
+            <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 border border-red-100/90 bg-yellow-300">
                 <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
-                        href="#"
+                        href="/"
                         className="mr-4 cursor-pointer py-1.5 font-medium"
                     >
-                        Material Tailwind
+                    <img src={logo} alt="" />
                     </Typography>
                     <div className="hidden lg:block">{navList}</div>
                     <Button variant="gradient" size="sm" className="hidden lg:inline-block">
