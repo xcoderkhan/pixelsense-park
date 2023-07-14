@@ -21,7 +21,7 @@ const Header = () => {
                 className="p-1 font-normal"
             >
                 <Link to="#" className="flex items-center">
-                    Pages
+                    Services
                 </Link>
             </Typography>
             <Typography
@@ -30,8 +30,8 @@ const Header = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to='#' className="flex items-center">
-                    Account
+                <Link to='/price' className="flex items-center">
+                    Price
                 </Link>
             </Typography>
             <Typography
@@ -40,8 +40,8 @@ const Header = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to='#' className="flex items-center">
-                    Blocks
+                <Link to='/about-us' className="flex items-center">
+                    About-Us
                 </Link>
             </Typography>
             <Typography
