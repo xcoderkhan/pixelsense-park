@@ -3,7 +3,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import{logo}from '../../../assets/images/logo/logo.png'
+
 
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -60,13 +60,9 @@ const Header = () => {
         <div className='bg-yellow-500'>
             <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 border border-red-100/90 bg-yellow-300">
                 <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-                    <Typography
-                        as="a"
-                        href="/"
-                        className="mr-4 cursor-pointer py-1.5 font-medium"
-                    >
-                    <img src={logo} alt="" />
-                    </Typography>
+                    <div className=" -mt-16 w-48 h-7 ">
+                        <Link to='/'><img src="/src/assets/logoim.png" alt="" /></Link>
+                    </div>
                     <div className="hidden lg:block">{navList}</div>
                     <Button variant="gradient" size="sm" className="hidden lg:inline-block">
                         <span>Buy Now</span>
